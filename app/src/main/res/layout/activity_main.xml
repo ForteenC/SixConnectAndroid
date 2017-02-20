@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dbw.sixconnectandroid.activitys.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+        <TextView
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:text="@string/tips"
+            android:textSize="30sp"
+            android:id="@+id/TV_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="#dac567"
+                android:id="@+id/btn_start"
+                android:text="@string/game_start"
+                android:textSize="20sp"
+                android:textColor="#a73223"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_gravity="end"
+                android:id="@+id/btn_regret"
+                android:text="@string/regret"
+                android:enabled="false"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="#dac567"
+        android:id="@+id/RL_board"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+    </RelativeLayout>
+
+
+</LinearLayout>
